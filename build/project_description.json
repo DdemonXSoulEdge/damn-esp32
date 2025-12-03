@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "dht22_telemetry",
-    "project_version":    "82d8ba4-dirty",
+    "project_version":    "6a27ae2-dirty",
     "project_path":       "C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.1",
     "build_dir":          "C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/build",

@@ -1,0 +1,39 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/main/main.c: In function 'init_sntp_and_timezone':
+C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/main/main.c:84:5: warning: 'sntp_setoperatingmode' is deprecated: use esp_sntp_setoperatingmode() instead [-Wdeprecated-declarations]
+   84 |     sntp_setoperatingmode(SNTP_OPMODE_POLL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/main/main.c:16:
+C:/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include/apps/esp_sntp.h:249:6: note: declared here
+  249 | void sntp_setoperatingmode(u8_t operating_mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/main/main.c:85:5: warning: 'sntp_setservername' is deprecated: use esp_sntp_setservername() instead [-Wdeprecated-declarations]
+   85 |     sntp_setservername(0, "mx.pool.ntp.org");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include/apps/esp_sntp.h:263:6: note: declared here
+  263 | void sntp_setservername(u8_t idx, const char *server)
+      |      ^~~~~~~~~~~~~~~~~~
+C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/main/main.c:86:5: warning: 'sntp_init' is deprecated: use esp_sntp_init() instead [-Wdeprecated-declarations]
+   86 |     sntp_init();
+      |     ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.1/components/lwip/include/apps/esp_sntp.h:269:6: note: declared here
+  269 | void sntp_init(void)
+      |      ^~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable dht22_telemetry.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/build/dht22_telemetry.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/build/partition_table/partition-table.bin" "C:/Users/user/Documents/9no Cuatrimestre/APP/theend/dht22_telemetry/build/dht22_telemetry.bin""
+dht22_telemetry.bin binary size 0xf40b0 bytes. Smallest app partition is 0x100000 bytes. 0xbf50 bytes (5%) free.
+Warning: The smallest app partition is nearly full (5% free space left)!

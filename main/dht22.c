@@ -6,15 +6,14 @@
 static const char *TAG = "DHT22";
 static gpio_num_t dht_gpio;
 
-#define DHT_TIMEOUT_US  1000   // Timeout ampliado
+#define DHT_TIMEOUT_US  1000
 
-// Espera a que el pin esté en el nivel indicado con timeout
 static inline int wait_for_level(int level, uint32_t timeout_us)
 {
     uint32_t start = esp_timer_get_time();
     while (gpio_get_level(dht_gpio) == level) {
         if ((esp_timer_get_time() - start) > timeout_us) {
-            return -1; // timeout
+            return -1; 
         }
     }
     return 0;
@@ -24,7 +23,6 @@ static int dht22_read_raw(int *humidity, int *temperature)
 {
     uint8_t data[5] = {0};
 
-    // --- Reinicio rápido del pin (EVITA BLOQUEOS) ---
     gpio_set_direction(dht_gpio, GPIO_MODE_OUTPUT);
     gpio_set_level(dht_gpio, 1);
     esp_rom_delay_us(10);

@@ -1,0 +1,299 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\dht22_telemetry.elf C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  1 2025 19:25:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fd64h (195940) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003fd8c vaddr=3ffb0000 size=0028ch (   652) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a8108h (688392) map[0m
+[0;32mI (394) esp_image: segment 3: paddr=000e8130 vaddr=3ffb028c size=03cf0h ( 15600) load[0m
+[0;32mI (400) esp_image: segment 4: paddr=000ebe28 vaddr=40080000 size=17e34h ( 97844) load[0m
+[0;32mI (438) esp_image: segment 5: paddr=00103c64 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) app_init: Application information:[0m
+[0;32mI (469) app_init: Project name:     dht22_telemetry[0m
+[0;32mI (474) app_init: App version:      6a27ae2-dirty[0m
+[0;32mI (478) app_init: Compile time:     Dec  1 2025 19:24:40[0m
+[0;32mI (483) app_init: ELF file SHA256:  6ec371b2f...[0m
+[0;32mI (488) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (491) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (495) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (503) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (510) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFB88A8 len 00027758 (157 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097E34 len 000081CC (32 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (543) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (556) main_task: Started on CPU0[0m
+[0;32mI (566) main_task: Calling app_main()[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc091c, prio:23, stack:6656, core=0[0m
+[0;32mI (626) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (626) wifi:wifi certification version: v7.0[0m
+[0;32mI (626) wifi:config NVS flash: enabled[0m
+[0;32mI (626) wifi:config nano formatting: disabled[0m
+[0;32mI (626) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (636) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (646) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (656) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (656) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (666) wifi_init: tcpip mbox: 32[0m
+[0;32mI (666) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (686) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (776) wifi:mode : sta (6c:c8:40:88:68:0c)[0m
+[0;32mI (776) wifi:enable tsf[0m
+[1;31mE (786) wifi:sta is connecting, return error[0m
+[0;32mI (796) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (796) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (816) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (836) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (846) wifi:connected with Steren COM-825, aid = 1, channel 10, BW20, bssid = d8:32:14:c1:56:b8[0m
+[0;32mI (846) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (846) wifi:pm start, type: 1[0m
+
+[0;32mI (846) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (866) wifi:<ba-add>idx:0 (ifx:0, d8:32:14:c1:56:b8), tid:0, ssn:2, winSize:64[0m
+[0;32mI (876) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3936) esp_netif_handlers: sta ip: 192.168.0.100, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3936) DHT22_APP: ✅ WiFi conectado[0m
+[0;32mI (4786) DHT22_APP: Inicializando SNTP...[0m
+[0;32mI (6026) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (7336) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (7336) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":28,"update_interval_ms":28000}[0m
+[0;32mI (7336) DHT22_APP: ✅ Intervalo actualizado: 28000 ms[0m
+[0;32mI (7356) DHT22_APP: 🌡️ Temp: 23.8°C  💧 Hum: 57.3%[0m
+[0;32mI (8586) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (10106) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (11346) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (12456) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (12456) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":45,"update_interval_ms":45000}[0m
+[0;32mI (12466) DHT22_APP: ✅ Intervalo actualizado: 45000 ms[0m
+[0;32mI (12476) DHT22_APP: ⏳ Esperando 45000 ms...[0m
+[0;32mI (57476) DHT22_APP: 🌡️ Temp: 23.6°C  💧 Hum: 57.3%[0m
+[0;32mI (58716) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (60176) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (61436) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (62536) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (62536) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":36,"update_interval_ms":36000}[0m
+[0;32mI (62536) DHT22_APP: ✅ Intervalo actualizado: 36000 ms[0m
+[0;32mI (62546) DHT22_APP: ⏳ Esperando 36000 ms...[0m
+[0;32mI (98546) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.1%[0m
+[0;32mI (99786) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (101236) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (102476) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (103596) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (103596) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":30,"update_interval_ms":30000}[0m
+[0;32mI (103596) DHT22_APP: ✅ Intervalo actualizado: 30000 ms[0m
+[0;32mI (103606) DHT22_APP: ⏳ Esperando 30000 ms...[0m
+[0;32mI (133606) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.2%[0m
+[0;32mI (134856) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (136356) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (137596) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (138816) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (138816) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":33,"update_interval_ms":33000}[0m
+[0;32mI (138826) DHT22_APP: ✅ Intervalo actualizado: 33000 ms[0m
+[0;32mI (138836) DHT22_APP: ⏳ Esperando 33000 ms...[0m
+[0;32mI (171836) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.6%[0m
+[0;32mI (173066) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (174456) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (175686) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (176806) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (176806) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":25,"update_interval_ms":25000}[0m
+[0;32mI (176816) DHT22_APP: ✅ Intervalo actualizado: 25000 ms[0m
+[0;32mI (176826) DHT22_APP: ⏳ Esperando 25000 ms...[0m
+[0;32mI (201826) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.2%[0m
+[0;32mI (203266) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (204766) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (205996) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (207216) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (207226) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":46,"update_interval_ms":46000}[0m
+[0;32mI (207226) DHT22_APP: ✅ Intervalo actualizado: 46000 ms[0m
+[0;32mI (207236) DHT22_APP: ⏳ Esperando 46000 ms...[0m
+[0;32mI (253236) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.2%[0m
+[0;32mI (254466) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (255966) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (257196) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (258526) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (258526) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":27,"update_interval_ms":27000}[0m
+[0;32mI (258526) DHT22_APP: ✅ Intervalo actualizado: 27000 ms[0m
+[0;32mI (258536) DHT22_APP: ⏳ Esperando 27000 ms...[0m
+[0;32mI (285536) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.2%[0m
+[0;32mI (286776) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (288116) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (289356) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (290476) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (290476) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":27,"update_interval_ms":27000}[0m
+[0;32mI (290476) DHT22_APP: ✅ Intervalo actualizado: 27000 ms[0m
+[0;32mI (290486) DHT22_APP: ⏳ Esperando 27000 ms...[0m
+[0;32mI (317486) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.1%[0m
+[0;32mI (318716) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (320266) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (321506) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (322626) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (322626) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":11,"update_interval_ms":11000}[0m
+[0;32mI (322636) DHT22_APP: ✅ Intervalo actualizado: 11000 ms[0m
+[0;32mI (322646) DHT22_APP: ⏳ Esperando 11000 ms...[0m
+[0;32mI (333646) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.0%[0m
+[0;32mI (334866) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (336446) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (337686) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (338906) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (338906) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":15,"update_interval_ms":15000}[0m
+[0;32mI (338906) DHT22_APP: ✅ Intervalo actualizado: 15000 ms[0m
+[0;32mI (338916) DHT22_APP: ⏳ Esperando 15000 ms...[0m
+[0;32mI (353916) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 56.9%[0m
+[0;32mI (355146) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (356516) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (357756) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (359186) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (359186) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":47,"update_interval_ms":47000}[0m
+[0;32mI (359186) DHT22_APP: ✅ Intervalo actualizado: 47000 ms[0m
+[0;32mI (359196) DHT22_APP: ⏳ Esperando 47000 ms...[0m
+[0;32mI (406196) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.0%[0m
+[0;32mI (407716) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (409256) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (410486) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (411716) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (411716) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":4,"update_interval_ms":4000}[0m
+[0;32mI (411716) DHT22_APP: ✅ Intervalo actualizado: 4000 ms[0m
+[0;32mI (411726) DHT22_APP: ⏳ Esperando 4000 ms...[0m
+[0;32mI (415726) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.0%[0m
+[0;32mI (416956) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (418366) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (419606) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (420726) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (420726) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":50,"update_interval_ms":50000}[0m
+[0;32mI (420726) DHT22_APP: ✅ Intervalo actualizado: 50000 ms[0m
+[0;32mI (420736) DHT22_APP: ⏳ Esperando 50000 ms...[0m
+[0;32mI (470736) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 56.9%[0m
+[0;32mI (471966) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (473456) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (474696) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (475836) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (475836) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":12,"update_interval_ms":12000}[0m
+[0;32mI (475836) DHT22_APP: ✅ Intervalo actualizado: 12000 ms[0m
+[0;32mI (475846) DHT22_APP: ⏳ Esperando 12000 ms...[0m
+[0;32mI (487846) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 57.1%[0m
+[0;32mI (489076) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (490456) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (491686) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (493026) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (493026) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":50,"update_interval_ms":50000}[0m
+[0;32mI (493036) DHT22_APP: ✅ Intervalo actualizado: 50000 ms[0m
+[0;32mI (493046) DHT22_APP: ⏳ Esperando 50000 ms...[0m
+[0;32mI (543046) DHT22_APP: 🌡️ Temp: 23.7°C  💧 Hum: 56.9%[0m
+[0;32mI (544276) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (545856) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (547096) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (548316) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (548316) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":49,"update_interval_ms":49000}[0m
+[0;32mI (548316) DHT22_APP: ✅ Intervalo actualizado: 49000 ms[0m
+[0;32mI (548326) DHT22_APP: ⏳ Esperando 49000 ms...[0m
+[0;32mI (597326) DHT22_APP: 🌡️ Temp: 23.8°C  💧 Hum: 56.8%[0m
+[0;32mI (598566) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (600126) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (601386) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (602586) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (602586) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":13,"update_interval_ms":13000}[0m
+[0;32mI (602586) DHT22_APP: ✅ Intervalo actualizado: 13000 ms[0m
+[0;32mI (602596) DHT22_APP: ⏳ Esperando 13000 ms...[0m
+[0;32mI (615596) DHT22_APP: 🌡️ Temp: 23.8°C  💧 Hum: 56.7%[0m
+[0;32mI (616826) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (618256) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (619486) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (620706) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (620706) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":28,"update_interval_ms":28000}[0m
+[0;32mI (620716) DHT22_APP: ✅ Intervalo actualizado: 28000 ms[0m
+[0;32mI (620726) DHT22_APP: ⏳ Esperando 28000 ms...[0m
+[0;32mI (648726) DHT22_APP: 🌡️ Temp: 23.8°C  💧 Hum: 56.7%[0m
+[0;32mI (649956) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (651326) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (652566) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (653886) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (653886) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":34,"update_interval_ms":34000}[0m
+[0;32mI (653886) DHT22_APP: ✅ Intervalo actualizado: 34000 ms[0m
+[0;32mI (653896) DHT22_APP: ⏳ Esperando 34000 ms...[0m
+[0;32mI (687896) DHT22_APP: 🌡️ Temp: 23.8°C  💧 Hum: 56.6%[0m
+[0;32mI (689136) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (690646) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (691886) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (693206) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (693206) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":49,"update_interval_ms":49000}[0m
+[0;32mI (693216) DHT22_APP: ✅ Intervalo actualizado: 49000 ms[0m
+[0;32mI (693226) DHT22_APP: ⏳ Esperando 49000 ms...[0m
+[0;32mI (742226) DHT22_APP: 🌡️ Temp: 23.9°C  💧 Hum: 56.8%[0m
+[0;32mI (743466) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (744816) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (746046) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (747176) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (747176) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":28,"update_interval_ms":28000}[0m
+[0;32mI (747176) DHT22_APP: ✅ Intervalo actualizado: 28000 ms[0m
+[0;32mI (747186) DHT22_APP: ⏳ Esperando 28000 ms...[0m
+[0;32mI (775186) DHT22_APP: 🌡️ Temp: 24.3°C  💧 Hum: 56.6%[0m
+[0;32mI (776506) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (777996) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (779226) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (780356) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (780356) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":35,"update_interval_ms":35000}[0m
+[0;32mI (780356) DHT22_APP: ✅ Intervalo actualizado: 35000 ms[0m
+[0;32mI (780366) DHT22_APP: ⏳ Esperando 35000 ms...[0m
+[0;32mI (815366) DHT22_APP: 🌡️ Temp: 24.3°C  💧 Hum: 55.3%[0m
+[0;32mI (816596) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (818236) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (819486) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (820796) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (820796) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":36,"update_interval_ms":36000}[0m
+[0;32mI (820796) DHT22_APP: ✅ Intervalo actualizado: 36000 ms[0m
+[0;32mI (820806) DHT22_APP: ⏳ Esperando 36000 ms...[0m
+[0;32mI (856806) DHT22_APP: 🌡️ Temp: 24.3°C  💧 Hum: 55.6%[0m
+[0;32mI (858036) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (859506) DHT22_APP: ✅ Datos enviados correctamente[0m
+[0;32mI (860756) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (861856) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (861856) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":44,"update_interval_ms":44000}[0m
+[0;32mI (861866) DHT22_APP: ✅ Intervalo actualizado: 44000 ms[0m
+[0;32mI (861876) DHT22_APP: ⏳ Esperando 44000 ms...[0m
+[1;31mE (905876) DHT22_APP: ❌ Error leyendo DHT22[0m
+[0;32mI (907106) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (908246) DHT22_APP: ✅ HTTP Status = 200[0m
+[0;32mI (908246) DHT22_APP: ✅ JSON recibido: {"ok":true,"update_interval_seconds":45,"update_interval_ms":45000}[0m
+[0;32mI (908256) DHT22_APP: ✅ Intervalo actualizado: 45000 ms[0m
+[0;32mI (908256) DHT22_APP: ⏳ Esperando 45000 ms...[0m

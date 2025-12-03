@@ -1,0 +1,161 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\dht22_telemetry.elf C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  1 2025 19:25:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fa84h (195204) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003faac vaddr=3ffb0000 size=0056ch (  1388) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a4b70h (674672) map[0m
+[0;32mI (389) esp_image: segment 3: paddr=000e4b98 vaddr=3ffb056c size=03a10h ( 14864) load[0m
+[0;32mI (395) esp_image: segment 4: paddr=000e85b0 vaddr=40080000 size=17e34h ( 97844) load[0m
+[0;32mI (433) esp_image: segment 5: paddr=001003ec vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) app_init: Application information:[0m
+[0;32mI (464) app_init: Project name:     dht22_telemetry[0m
+[0;32mI (469) app_init: App version:      6a27ae2-dirty[0m
+[0;32mI (473) app_init: Compile time:     Dec  1 2025 19:24:40[0m
+[0;32mI (478) app_init: ELF file SHA256:  3c3a05195...[0m
+[0;32mI (482) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (486) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (490) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (498) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (509) heap_init: At 3FFB86A0 len 00027960 (158 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 40097E34 len 000081CC (32 KiB): IRAM[0m
+[0;32mI (532) spi_flash: detected chip: generic[0m
+[0;32mI (534) spi_flash: flash io: dio[0m
+[0;33mW (537) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (551) main_task: Started on CPU0[0m
+[0;32mI (561) main_task: Calling app_main()[0m
+[0;32mI (561) DHT22_APP: Inicializando NVS...[0m
+[0;32mI (591) DHT22_APP: Inicializando WiFi...[0m
+[0;32mI (601) wifi:wifi driver task: 3ffc0714, prio:23, stack:6656, core=0[0m
+[0;32mI (621) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (621) wifi:wifi certification version: v7.0[0m
+[0;32mI (621) wifi:config NVS flash: enabled[0m
+[0;32mI (621) wifi:config nano formatting: disabled[0m
+[0;32mI (621) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (631) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (631) wifi:Init management short buffer num: 32[0m
+[0;32mI (631) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (641) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (641) wifi:Init static rx buffer num: 10[0m
+[0;32mI (651) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (651) wifi_init: rx ba win: 6[0m
+[0;32mI (651) wifi_init: accept mbox: 6[0m
+[0;32mI (661) wifi_init: tcpip mbox: 32[0m
+[0;32mI (661) wifi_init: udp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp tx win: 5760[0m
+[0;32mI (671) wifi_init: tcp rx win: 5760[0m
+[0;32mI (671) wifi_init: tcp mss: 1440[0m
+[0;32mI (671) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (681) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (681) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (771) wifi:mode : sta (6c:c8:40:88:68:0c)[0m
+[0;32mI (771) wifi:enable tsf[0m
+[0;32mI (781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (1781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (2781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (3191) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (3781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (4781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (5611) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (5781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (6781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (7781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (8021) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (8781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (9781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (10441) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (10781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (11781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (12781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (12861) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (13781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (14781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (15271) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (15781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (16781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (17691) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (17781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (18781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (19781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (20101) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (20781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (21781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (22521) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (22781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (23781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (24781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (24931) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (25781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (26781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (27351) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (27781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (28781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (29761) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (29781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (30781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (31781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (32181) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (32781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (33781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (34601) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (34781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (35781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (36781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (37011) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (37781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (38781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (39431) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (39781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (40781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (41781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (41841) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (42781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (43781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (44261) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (44781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (45781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (46671) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (46781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (47781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (48781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (49091) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (49781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (50781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (51501) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (51781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (52781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (53781) DHT22_APP: Esperando conexión WiFi...[0m
+[0;32mI (53921) DHT22_APP: WiFi desconectado, reconectando...[0m
+[0;32mI (54781) DHT22_APP: Esperando conexión WiFi...[0m

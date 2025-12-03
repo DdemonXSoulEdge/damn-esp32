@@ -1,0 +1,109 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\dht22_telemetry.elf C:\Users\user\Documents\9no Cuatrimestre\APP\theend\dht22_telemetry\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  1 2025 19:25:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fd54h (195924) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003fd7c vaddr=3ffb0000 size=0029ch (   668) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a834ch (688972) map[0m
+[0;32mI (394) esp_image: segment 3: paddr=000e8374 vaddr=3ffb029c size=03ce0h ( 15584) load[0m
+[0;32mI (400) esp_image: segment 4: paddr=000ec05c vaddr=40080000 size=17e34h ( 97844) load[0m
+[0;32mI (438) esp_image: segment 5: paddr=00103e98 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) app_init: Application information:[0m
+[0;32mI (469) app_init: Project name:     dht22_telemetry[0m
+[0;32mI (474) app_init: App version:      6a27ae2-dirty[0m
+[0;32mI (478) app_init: Compile time:     Dec  1 2025 19:24:40[0m
+[0;32mI (484) app_init: ELF file SHA256:  786fbf4d4...[0m
+[0;32mI (488) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (492) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (495) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (510) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFB86A0 len 00027960 (158 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097E34 len 000081CC (32 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (543) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (556) main_task: Started on CPU0[0m
+[0;32mI (566) main_task: Calling app_main()[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc0714, prio:23, stack:6656, core=0[0m
+[0;32mI (626) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (626) wifi:wifi certification version: v7.0[0m
+[0;32mI (626) wifi:config NVS flash: enabled[0m
+[0;32mI (626) wifi:config nano formatting: disabled[0m
+[0;32mI (626) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (636) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (646) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (656) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (656) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (666) wifi_init: tcpip mbox: 32[0m
+[0;32mI (666) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (686) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (776) wifi:mode : sta (6c:c8:40:88:68:0c)[0m
+[0;32mI (776) wifi:enable tsf[0m
+[0;32mI (796) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (796) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (816) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (846) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (856) wifi:connected with Steren COM-825, aid = 1, channel 10, BW20, bssid = d8:32:14:c1:56:b8[0m
+[0;32mI (856) wifi:security: WPA2-PSK, phy: bgn, rssi: -23[0m
+[0;32mI (866) wifi:pm start, type: 1[0m
+
+[0;32mI (866) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (866) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (886) wifi:<ba-add>idx:0 (ifx:0, d8:32:14:c1:56:b8), tid:0, ssn:2, winSize:64[0m
+[0;32mI (3926) esp_netif_handlers: sta ip: 192.168.0.100, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3926) DHT22_APP: WiFi conectado[0m
+[0;32mI (4786) DHT22_APP: Inicializando SNTP...[0m
+[0;32mI (10786) DHT22_APP: Temp: 22.4°C  Hum: 55.3%[0m
+[0;32mI (12006) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (13576) DHT22_APP: Datos enviados correctamente[0m
+[0;32mI (14796) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (16136) DHT22_APP: Esperando 180000 ms...[0m
+[1;31mE (196136) DHT22_APP: Error leyendo DHT22[0m
+[0;32mI (197366) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (198526) DHT22_APP: Esperando 180000 ms...[0m
+[0;32mI (378526) DHT22_APP: Temp: 22.5°C  Hum: 55.2%[0m
+[0;32mI (380056) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (381606) DHT22_APP: Datos enviados correctamente[0m
+[0;32mI (382816) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (383956) DHT22_APP: Esperando 180000 ms...[0m

@@ -27,6 +27,9 @@ Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espress
 [0m--- 0x4008ae47: [0;33mvTaskSwitchContext[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m3698[0m
 [0m--- 0x40089c0c: [0;33m_frxt_dispatch[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m451[0m
 [0m--- 0x40089bbe: [0;33m_frxt_int_exit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m246[0m
+[0m--- 0x4008dcb2: [0;33mvPortExitCriticalSafe[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m596[0m
+[0m--- (inlined by) [0;33mmulti_heap_internal_unlock[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/multi_heap.c[0m[0m:[1;31m176[0m
+[0m--- 0x4000bff0: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
 [0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
 [0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
 [0m--- 0x40088ad9: [0;33mpanic_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/panic.c[0m[0m:[1;31m469[0m
@@ -42,27 +45,4 @@ Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espress
 [0m--- 0x40089b02: [0;33mvApplicationStackOverflowHook[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m563[0m
 [0m--- 0x4008ae47: [0;33mvTaskSwitchContext[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m3698[0m
 [0m--- 0x40089c0c: [0;33m_frxt_dispatch[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m451[0m
-[0m--- 0x40089bbe: [0;33m_frxt_int_exit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m246[0m
-[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
-[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
-[0m--- 0x40088ad9: [0;33mpanic_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/panic.c[0m[0m:[1;31m469[0m
-[0m--- 0x40088aa1: [0;33mesp_system_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
-[0m--- 0x40089b02: [0;33mvApplicationStackOverflowHook[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m563[0m
-[0m--- 0x4008ae47: [0;33mvTaskSwitchContext[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m3698[0m
-[0m--- 0x40089c0c: [0;33m_frxt_dispatch[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m451[0m
-[0m--- 0x40089bbe: [0;33m_frxt_int_exit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S[0m[0m:[1;31m246[0m
-[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
-[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
-[1;31m--- Error: GetOverlappedResult failed (PermissionError(13, 'Acceso denegado.', None, 5))[0m
-[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
-[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
-[0m
-Traceback (most recent call last):
-  File "C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py", line 11, in <module>
-    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "subprocess.py", line 550, in run
-  File "subprocess.py", line 1199, in communicate
-  File "subprocess.py", line 1262, in wait
-  File "subprocess.py", line 1543, in _wait
-KeyboardInterrupt
+[0m--- 0x40089bbe: [0;33m_frxt_int_exit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/p
